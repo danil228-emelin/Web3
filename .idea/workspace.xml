@@ -10,19 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d955c1cf-c0a9-46d7-b12f-34572af3cdca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itmo/project/ClockView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bubble.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bubble.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/drawing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/graphElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/itmo/project/HelloBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/itmo/project/ClockView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bubble.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bubble.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/hello.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/hello.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bubble.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bubble.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +30,8 @@
       <list>
         <option value="jsf" />
         <option value="package.json" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -44,6 +40,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/webapp/hello.xhtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/main.xhtml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -269,7 +266,10 @@
       <workItem from="1700146723309" duration="6478000" />
       <workItem from="1700190108029" duration="3311000" />
       <workItem from="1700197562877" duration="51000" />
-      <workItem from="1700203479175" duration="438000" />
+      <workItem from="1700203479175" duration="2575000" />
+      <workItem from="1700213566081" duration="2330000" />
+      <workItem from="1700216422369" duration="2164000" />
+      <workItem from="1700219160978" duration="2230000" />
     </task>
     <servers />
   </component>
