@@ -28,10 +28,11 @@
                 >
                     <f:validateLongRange minimum="-3" maximum="5"/>
                 </h:inputText>
+                <h:message showSummary="true" showDetail="false"
+                           id="errors1"
+                           for="Y_input"/>
             </h:panelGrid>
-            <h:message showSummary="true" showDetail="false"
-                       id="errors1"
-                       for="Y_input"/>
+
         </h:form>
         <h:form id="R">
             <h:panelGrid columns="1" cellpadding="5" styleClass="ui-grid">
