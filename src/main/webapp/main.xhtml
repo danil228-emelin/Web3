@@ -3,22 +3,44 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui" xmlns:f="http://java.sun.com/jsf/core">
 <h:head>
     <title>Main page</title>
     <link rel="stylesheet" href="style.css"/>
 
 </h:head>
 <h:body>
-  <div class="inputs">
-    <h:form>
-        <h:panelGrid columns="1" cellpadding="5" styleClass="ui-grid">
-            <p:outputLabel for="@next" value="X"/>
-            <p:spinner value="0" min="-4" max="4" stepFactor="-0.5"/>
-        </h:panelGrid>
-    </h:form>
-  </div>
-    <button id="back" type="button" onclick="changePageBack()">Back</button>
+    <div class="inputs">
+        <h:form id="X">
+            <h:panelGrid columns="1" cellpadding="5" styleClass="ui-grid">
+                <p:outputLabel for="@next" value="X"/>
+                <p:spinner value="0" min="-4" max="4" stepFactor="-0.5"/>
+            </h:panelGrid>
+        </h:form>
+        <h:form id="Y">
+            <h:panelGrid columns="1" cellpadding="5" styleClass="ui-grid">
+                <p:outputLabel for="@next" value="Y"/>
+                <h:inputText id="Y_input"
+                             value="0"
+                             maxlength="10"
+                             style="width: 245px;height: 40px"
+                             title="Type a number from -3 to 5:"
+                >
+                    <f:validateLongRange minimum="-3" maximum="5"/>
+                </h:inputText>
+            </h:panelGrid>
+            <h:message showSummary="true" showDetail="false"
+                       id="errors1"
+                       for="Y_input"/>
+        </h:form>
+        <h:form id="R">
+            <h:panelGrid columns="1" cellpadding="5" styleClass="ui-grid">
+                <p:outputLabel for="@next" value="R"/>
+                <p:spinner value="0" min="0" max="3" stepFactor="-0.1"/>
+            </h:panelGrid>
+        </h:form>
+        <button id="back" type="button" onclick="changePageBack()">Back</button>
+    </div>
     <script type="text/javascript" src="js/bubble.js"></script>
 </h:body>
 </html>
