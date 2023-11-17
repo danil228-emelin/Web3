@@ -20,11 +20,26 @@ body {
     grid-row-start: 1;
     grid-row-end: 2;
 }
-.inputs  #errors1{
+
+.inputs #errors1 {
     grid-column-start: 3;
     grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: 2;
+}
+
+.inputs #result {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+#result {
+    position: relative;
+    max-height: 300px;
+    width: 500px;
+    overflow: scroll;
 }
 
 .inputs #Y {
@@ -33,6 +48,7 @@ body {
     grid-row-start: 2;
     grid-row-end: 3;
 }
+
 .inputs #R {
     grid-column-start: 3;
     grid-column-end: 9;
@@ -105,4 +121,21 @@ body {
 #back:active {
     box-shadow: #3c4fe0 0 3px 7px inset;
     transform: translateY(2px);
+}
+
+#result {
+    border-collapse: collapse;
+    font-family: helvetica;
+    border: 1px solid;
+    position: relative;
+    max-height:  300px;
+    width: 500px;
+    overflow: scroll;
+}
+#result td,#result th {border:  1px solid;
+    padding: 10px;
+    min-width: 200px;
+    background: white;
+    box-sizing: border-box;
+    text-align: left;
 }

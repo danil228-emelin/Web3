@@ -10,12 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d955c1cf-c0a9-46d7-b12f-34572af3cdca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/itmo/project/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/error/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/error/niga.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/error/niga.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
     </list>
@@ -283,7 +278,7 @@
       <workItem from="1700213566081" duration="2330000" />
       <workItem from="1700216422369" duration="2164000" />
       <workItem from="1700219160978" duration="2230000" />
-      <workItem from="1700233803304" duration="11639000" />
+      <workItem from="1700233803304" duration="13619000" />
     </task>
     <servers />
   </component>

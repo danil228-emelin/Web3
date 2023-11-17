@@ -32,7 +32,6 @@
                            id="errors1"
                            for="Y_input"/>
             </h:panelGrid>
-
         </h:form>
         <h:form id="R">
             <h:panelGrid columns="1" cellpadding="5" styleClass="ui-grid">
@@ -41,6 +40,16 @@
             </h:panelGrid>
         </h:form>
         <button id="back" type="button" onclick="changePageBack()">Back</button>
+        <h:dataTable id="result">
+            <h:column>
+                <f:facet name="header">Name</f:facet>
+                B
+            </h:column>
+            <h:column>
+                <f:facet name="header">FeMale</f:facet>
+                A
+            </h:column>
+        </h:dataTable>
     </div>
     <script type="text/javascript" src="js/bubble.js"></script>
 </h:body>
