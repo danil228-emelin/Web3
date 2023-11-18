@@ -19,7 +19,7 @@
             </h:panelGrid>
         </h:form>
         <h:form id="Y">
-            <h:panelGrid  columns="1"  cellpadding="5" styleClass="ui-grid">
+            <h:panelGrid columns="1" cellpadding="5" styleClass="ui-grid">
                 <p:outputLabel for="@next" value="Y"/>
                 <h:inputText id="Y_input"
                              value="0"
@@ -29,9 +29,9 @@
                 >
                     <f:validateLongRange minimum="-3" maximum="5"/>
                 </h:inputText>
-<!--                    <h:message showSummary="true" showDetail="false"-->
-<!--                               id="errors1"-->
-<!--                               for="Y_input"/>-->
+                <!--                    <h:message showSummary="true" showDetail="false"-->
+                <!--                               id="errors1"-->
+                <!--                               for="Y_input"/>-->
             </h:panelGrid>
         </h:form>
         <h:form id="R">
@@ -40,6 +40,8 @@
                 <p:spinner value="0" min="0" max="3" stepFactor="-0.1"/>
             </h:panelGrid>
         </h:form>
+        <button id="send" type="button" onclick="addInTable()">Send</button>
+
         <button id="back" type="button" onclick="changePageBack()">Back</button>
         <h:dataTable id="result" value="#{result.list}" var="list">
             <h:column>
@@ -72,5 +74,7 @@
 
     <script type="text/javascript" src="js/graphElement.js"></script>
     <script type="text/javascript" src="js/bubble.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </h:body>
 </html>

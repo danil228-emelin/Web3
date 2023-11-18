@@ -32,6 +32,13 @@ body {
     grid-row-start: 5;
     grid-row-end: 6;
 }
+
+.inputs #send {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 8;
+    grid-row-end: 8;
+}
 .inputs #errors1{
     grid-column-start: 4;
     grid-column-end: 4;
@@ -39,10 +46,10 @@ body {
     grid-row-end: 4;
 }
 .inputs #result {
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 9;
-    grid-row-end: 9;
+    grid-column-start: 15;
+    grid-column-end: 16;
+    grid-row-start: 10;
+    grid-row-end: 10;
 }
 .inputs #graphic{
     grid-column-start: 20;
@@ -79,7 +86,7 @@ body {
 }
 
 
-#back {
+#back,#send {
     align-items: center;
     appearance: none;
     background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
@@ -110,16 +117,16 @@ body {
     font-size: 18px;
 }
 
-#back:focus {
+#back:focus,#send:focus {
     box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 }
 
-#back:hover {
+#back:hover,#send:hover {
     box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
     transform: translateY(-2px);
 }
 
-#back:active {
+#back:active,#send:active {
     box-shadow: #3c4fe0 0 3px 7px inset;
     transform: translateY(2px);
 }
