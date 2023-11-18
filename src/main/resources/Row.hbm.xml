@@ -1,0 +1,28 @@
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        '-//Hibernate/Hibernate Mapping DTD 3.0//EN'
+        'http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd'>
+
+<hibernate-mapping>
+    <class name='itmo.project.Row' table='list'>
+        <id name='id' column='id' >
+            <generator class='increment'/>
+        </id>
+
+        <property name='x'>
+            <column name='x' />
+        </property>
+        <property name='y'>
+            <column name='y'/>
+        </property>
+        <property name='r'>
+            <column name='r'/>
+        </property>
+        <property name='requestTime'>
+            <column name='request_time'/>
+        </property>
+        <property name='responseTime'>
+            <column name='response_time'/>
+        </property>
+    </class>
+</hibernate-mapping>

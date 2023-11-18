@@ -3,7 +3,8 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:p="http://primefaces.org/ui" xmlns:f="http://java.sun.com/jsf/core">
+      xmlns:p="http://primefaces.org/ui" xmlns:f="http://java.sun.com/jsf/core"
+>
 <h:head>
     <title>Main page</title>
     <link rel="stylesheet" href="style.css"/>
@@ -40,14 +41,28 @@
             </h:panelGrid>
         </h:form>
         <button id="back" type="button" onclick="changePageBack()">Back</button>
-        <h:dataTable id="result">
+        <h:dataTable id="result" value="#{result.list}" var="list">
             <h:column>
-                <f:facet name="header">Name</f:facet>
-                B
+                <f:facet name="header">X</f:facet>
+                <h:outputText value="#{list.x}"/>
             </h:column>
             <h:column>
-                <f:facet name="header">FeMale</f:facet>
-                A
+                <f:facet name="header">Y</f:facet>
+                <h:outputText value="#{list.y}"/>
+
+            </h:column>
+            <h:column>
+                <f:facet name="header">R</f:facet>
+                <h:outputText value="#{list.r}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Request Time</f:facet>
+                <h:outputText value="#{list.requestTime}"/>
+
+            </h:column>
+            <h:column>
+                <f:facet name="header">Response Time</f:facet>
+                <h:outputText value="#{list.responseTime}"/>
             </h:column>
         </h:dataTable>
     </div>

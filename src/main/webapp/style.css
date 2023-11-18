@@ -30,7 +30,7 @@ body {
 
 .inputs #result {
     grid-column-start: 5;
-    grid-column-end: 9;
+    grid-column-end: 7;
     grid-row-start: 4;
     grid-row-end: 6;
 }
@@ -128,14 +128,54 @@ body {
     font-family: helvetica;
     border: 1px solid;
     position: relative;
-    max-height:  300px;
+    max-height: 300px;
     width: 500px;
     overflow: scroll;
 }
-#result td,#result th {border:  1px solid;
+
+#result td, #result th {
+    border: 1px solid;
     padding: 10px;
     min-width: 200px;
-    background: white;
+    background: linear-gradient(-45deg, #ee6e4f, #296450, #3a7d91, #2a7e62);
+    animation: gradient 15s ease infinite;
     box-sizing: border-box;
     text-align: left;
+}
+
+#result thead th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: linear-gradient(-45deg, #ee6e4f, #5164c5, #3a7d91, #4ebb9f);
+    animation: gradient 15s ease infinite;
+}
+
+#result thead th:first-child {
+    left: 0;
+    z-index: 3;
+}
+
+#result tfoot {
+    position: -webkit-sticky;
+    bottom: 0;
+    z-index: 2;
+}
+
+#result tfoot td {
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    background: linear-gradient(-45deg, #ee6e4f, #5164c5, #3a7d91, #4ebb9f);
+
+}
+
+#result tfoot td:first-child {
+    z-index: 3;
+}
+
+#result tbody {
+    overflow: scroll;
+    height: 200px;
 }
