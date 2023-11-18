@@ -10,16 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d955c1cf-c0a9-46d7-b12f-34572af3cdca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itmo/project/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itmo/project/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itmo/project/Row.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itmo/project/SessionJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/itmo/project/Validator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/graphElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/graphElement.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
     </list>
@@ -303,12 +295,23 @@
       <workItem from="1700233803304" duration="14529000" />
       <workItem from="1700250633735" duration="2636000" />
       <workItem from="1700253353193" duration="3128000" />
-      <workItem from="1700287641726" duration="5758000" />
+      <workItem from="1700287641726" duration="6682000" />
+      <workItem from="1700303744863" duration="2012000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/webapp/js/graphElement.js</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

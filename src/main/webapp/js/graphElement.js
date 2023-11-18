@@ -1,5 +1,7 @@
-const canvas = document.getElementById("graph"),
-    ctx = canvas.getContext("2d");
+
+ canvas = document.createElement("canvas");
+document.getElementById('graphic').appendChild(canvas);
+ctx = canvas.getContext("2d");
 canvas.width = canvas.clientWidth;
 let w = canvas.width, h = canvas.height;
 

@@ -19,7 +19,7 @@
             </h:panelGrid>
         </h:form>
         <h:form id="Y">
-            <h:panelGrid columns="1" cellpadding="5" styleClass="ui-grid">
+            <h:panelGrid  columns="1"  cellpadding="5" styleClass="ui-grid">
                 <p:outputLabel for="@next" value="Y"/>
                 <h:inputText id="Y_input"
                              value="0"
@@ -29,9 +29,9 @@
                 >
                     <f:validateLongRange minimum="-3" maximum="5"/>
                 </h:inputText>
-                <h:message showSummary="true" showDetail="false"
-                           id="errors1"
-                           for="Y_input"/>
+<!--                    <h:message showSummary="true" showDetail="false"-->
+<!--                               id="errors1"-->
+<!--                               for="Y_input"/>-->
             </h:panelGrid>
         </h:form>
         <h:form id="R">
@@ -65,7 +65,12 @@
                 <h:outputText value="#{list.responseTime}"/>
             </h:column>
         </h:dataTable>
+        <div id="graphic">
+
+        </div>
     </div>
+
+    <script type="text/javascript" src="js/graphElement.js"></script>
     <script type="text/javascript" src="js/bubble.js"></script>
 </h:body>
 </html>

@@ -10,57 +10,58 @@ body {
 
 .inputs {
     display: grid;
-    grid-template-columns:repeat(20, 1fr);
-    grid-template-rows:repeat(20, 1fr);
+    grid-template-columns:repeat(20, 40px);
+    grid-template-rows:repeat(20, 40px);
 }
 
 .inputs #X {
     grid-column-start: 3;
-    grid-column-end: 18;
+    grid-column-end: 15;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-
-.inputs #errors1 {
-    grid-column-start: 3;
-    grid-column-end: 9;
-    grid-row-start: 2;
-    grid-row-end: 2;
-}
-
-.inputs #result {
-    grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 4;
-    grid-row-end: 6;
-}
-
-#result {
-    position: relative;
-    max-height: 300px;
-    width: 500px;
-    overflow: scroll;
-}
-
 .inputs #Y {
     grid-column-start: 3;
-    grid-column-end: 9;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.inputs #R {
+    grid-column-start: 3;
+    grid-column-end: 15;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.inputs #errors1{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.inputs #result {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 9;
+}
+.inputs #graphic{
+    grid-column-start: 20;
+    grid-column-end: 20;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-
-.inputs #R {
-    grid-column-start: 3;
-    grid-column-end: 9;
-    grid-row-start: 3;
-    grid-row-end: 4;
+#result {
+    position: relative;
+    max-height: 150px;
+    width: 250px;
+    overflow: scroll;
 }
 
 .inputs #back {
     grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 7;
-    grid-row-end: 7;
+    grid-column-end: 3;
+    grid-row-start: 17;
+    grid-row-end: 17;
 }
 
 @keyframes gradient {
@@ -128,15 +129,15 @@ body {
     font-family: helvetica;
     border: 1px solid;
     position: relative;
-    max-height: 300px;
+    max-height: 150px;
     width: 500px;
     overflow: scroll;
 }
 
 #result td, #result th {
     border: 1px solid;
-    padding: 10px;
-    min-width: 200px;
+    padding: 15px;
+    min-width: 100px;
     background: linear-gradient(-45deg, #ee6e4f, #296450, #3a7d91, #2a7e62);
     animation: gradient 15s ease infinite;
     box-sizing: border-box;
@@ -177,5 +178,5 @@ body {
 
 #result tbody {
     overflow: scroll;
-    height: 200px;
+    height: 150px;
 }
