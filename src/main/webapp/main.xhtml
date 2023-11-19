@@ -15,32 +15,66 @@
         <h:form id="X">
             <h:panelGrid columns="1" cellpadding="5" styleClass="ui-grid">
                 <p:outputLabel for="@next" value="X"/>
-                <p:spinner value="0" min="-4" max="4" stepFactor="-0.5"/>
+                <p:spinner min="-4" max="4" id="X_INPUTS" stepFactor="0.5" value="#{value.x}"/>
             </h:panelGrid>
         </h:form>
         <h:form id="Y">
             <h:panelGrid columns="1" cellpadding="5" styleClass="ui-grid">
                 <p:outputLabel for="@next" value="Y"/>
                 <h:inputText id="Y_input"
-                             value="0"
+                             value="#{value.y}"
                              maxlength="10"
+                             required="true"
                              style="width: 245px;height: 40px"
                              title="Type a number from -3 to 5:"
                 >
                     <f:validateLongRange minimum="-3" maximum="5"/>
                 </h:inputText>
-                <!--                    <h:message showSummary="true" showDetail="false"-->
-                <!--                               id="errors1"-->
-                <!--                               for="Y_input"/>-->
             </h:panelGrid>
         </h:form>
         <h:form id="R">
             <h:panelGrid columns="1" cellpadding="5" styleClass="ui-grid">
                 <p:outputLabel for="@next" value="R"/>
-                <p:spinner value="0" min="0" max="3" stepFactor="-0.1"/>
+                <p:spinner value="#{value.r}" min="0" id="R_input" max="3" stepFactor="0.1"/>
             </h:panelGrid>
+
         </h:form>
-        <button id="send" type="button" onclick="addInTable()">Send</button>
+
+        <h:form id="form_send">
+            <p:remoteCommand name="rc" action="#{result.test}" rendered="true"/>
+            <button id="send" type="button" onclick="runRemoteCommand()">Send</button>
+            <script type="text/javascript">
+                function checkTime(i) {
+                    if (i &lt; 10) {
+                        i = "0" + i;
+                    }
+                    return i;
+                }
+
+                function runRemoteCommand() {
+                    let d = new Date();
+                    let h = d.getHours();
+                    let m = checkTime(d.getMinutes());
+                    let s = checkTime(d.getSeconds());
+                    let mm = checkTime(d.getMilliseconds());
+                    let x = document.getElementById("X:X_INPUTS_input");
+                    let y = document.getElementById("Y:Y_input");
+                    let r = document.getElementById("R:R_input_input");
+                    var promise = rc([
+                        {name: 'param1', value: x.value},
+                        {name: 'param2', value: y.value},
+                        {name: 'param3', value: r.value},
+                        {name: 'request_time', value: h + ":" + m + ":" + s + ":" + mm}]
+                    )
+                    promise.then(() => {
+                        window.location.reload();
+                    }).catch((error) => {
+                        console.error("Request failed", error);
+                    });
+                }
+            </script>
+        </h:form>
+
 
         <button id="back" type="button" onclick="changePageBack()">Back</button>
         <h:dataTable id="result" value="#{result.list}" var="list">
@@ -51,7 +85,6 @@
             <h:column>
                 <f:facet name="header">Y</f:facet>
                 <h:outputText value="#{list.y}"/>
-
             </h:column>
             <h:column>
                 <f:facet name="header">R</f:facet>
@@ -70,6 +103,7 @@
         <div id="graphic">
 
         </div>
+
     </div>
 
     <script type="text/javascript" src="js/graphElement.js"></script>

@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 public class Row {
     @Id
     @Column(name = "id")
-    private int id=0;
+    private int id = 0;
     @Column(name = "x")
 
     private String x;
@@ -36,6 +36,12 @@ public class Row {
 
     private String requestTime;
 
-
+    public static Row rowCreate(String x, String y, String r) {
+        Row row = new Row();
+        row.x = x;
+        row.y = y;
+        row.r = r;
+        return row;
+    }
 
 }
