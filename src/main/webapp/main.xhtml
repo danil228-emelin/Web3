@@ -35,6 +35,7 @@
         <h:form id="R">
             <h:panelGrid columns="1" cellpadding="5" styleClass="ui-grid">
                 <p:outputLabel for="@next" value="R"/>
+
                 <p:spinner value="#{value.r}" min="0" id="R_input" max="3" stepFactor="0.1"/>
             </h:panelGrid>
 
@@ -66,9 +67,7 @@
                         {name: 'param3', value: r.value},
                         {name: 'request_time', value: h + ":" + m + ":" + s + ":" + mm}]
                     )
-                    promise.then(() => {
-                        window.location.reload();
-                    }).catch((error) => {
+                    promise.catch((error) => {
                         console.error("Request failed", error);
                     });
                 }
@@ -76,7 +75,8 @@
         </h:form>
 
 
-        <button id="back" type="button" onclick="changePageBack()">Back</button>
+        <button id="back" type="button" onclick="changePageBack()">Back
+        </button>
         <h:dataTable id="result" value="#{result.list}" var="list">
             <h:column>
                 <f:facet name="header">X</f:facet>
@@ -100,14 +100,15 @@
                 <h:outputText value="#{list.responseTime}"/>
             </h:column>
         </h:dataTable>
+
         <div id="graphic">
 
         </div>
-
     </div>
-
-    <script type="text/javascript" src="js/graphElement.js"></script>
     <script type="text/javascript" src="js/bubble.js"></script>
+    <script type="text/javascript" src="js/graphElement.js"></script>
+    <script type="text/javascript" src="js/drawing.js"></script>
+
     <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 </h:body>

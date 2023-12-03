@@ -1,16 +1,21 @@
+canvas = document.createElement("canvas");
+canvas.setAttribute("id", "canvas");
+el = document.getElementById('graphic');
+if (el.hasChildNodes()) {
+    el.removeChild(el.firstChild);
+}
+el.appendChild(canvas);
 
- canvas = document.createElement("canvas");
-document.getElementById('graphic').appendChild(canvas);
 ctx = canvas.getContext("2d");
+
 canvas.width = canvas.clientWidth;
-let w = canvas.width, h = canvas.height;
-
-let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-gradient.addColorStop(0, "rgb(114,50,204)");
-
-let rValue = 'R';
 
 function redrawGraph(rValueFun) {
+    let w = canvas.width, h = canvas.height;
+
+    let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+    gradient.addColorStop(0, "rgb(114,50,204)");
+
     ctx.clearRect(0, 0, w, h);
     let r = (w - w / 6.4) / 2;
     let lineLength = w / 30;
@@ -20,21 +25,23 @@ function redrawGraph(rValueFun) {
 
     ctx.fillStyle = gradient;
     ctx.beginPath();
-    ctx.moveTo(w / 2, h / 2 + r / 2);
-    ctx.lineTo(w / 2 + r, h / 2 + r / 2);
-    ctx.lineTo(w / 2 + r, h / 2);
-    ctx.lineTo(w / 2, h / 2 - r / 2);
     ctx.moveTo(w / 2, h / 2);
-    ctx.arc(w / 2, h / 2, r / 2, - Math.PI , -Math.PI / 2, false)
-    ctx.fill();
+    ctx.lineTo(w / 2 + 125, h / 2);
+    ctx.lineTo(w / 2 + 125, h / 10);
+    ctx.lineTo(w / 2, h / 10);
+    ctx.lineTo(w / 2, h / 2);
+    ctx.lineTo(w / 2 - 125, h / 2);
+    ctx.lineTo(w / 2, h);
+    ctx.moveTo(w / 2, h / 2);
+    ctx.arc(w / 2, h / 2, r / 2, -Math.PI, -Math.PI / 2, false)
     ctx.stroke();
     ctx.closePath();
-
+//x and y lines
     ctx.beginPath();
-    ctx.moveTo(w / 2, 0);
-    ctx.lineTo(w / 2 - 10, 15);
-    ctx.moveTo(w / 2, 0);
-    ctx.lineTo(w / 2 + 10, 15);
+    // ctx.moveTo(w / 2, 0);
+    // ctx.lineTo(w / 2 - 10, 15);
+    // ctx.moveTo(w / 2, 0);
+    // ctx.lineTo(w / 2 + 10, 15);
     ctx.moveTo(w / 2, 0);
     ctx.lineTo(w / 2, h);
     ctx.stroke();
@@ -49,7 +56,7 @@ function redrawGraph(rValueFun) {
     ctx.lineTo(0, h / 2);
     ctx.stroke();
     ctx.closePath();
-
+//metki na grafike
     ctx.beginPath();
     ctx.moveTo(w / 2 - lineLength, h / 2 + r);
     ctx.lineTo(w / 2 + lineLength, h / 2 + r);
@@ -71,16 +78,10 @@ function redrawGraph(rValueFun) {
     ctx.stroke();
     ctx.closePath();
 
-    let label1, label2;
-    if (isNaN(rValueFun)) {
-        label1 = rValueFun;
-        label2 = rValueFun + '/2';
-    } else {
-        label1 = rValueFun;
-        label2 = rValueFun / 2;
-    }
 
-    rValue = label2;
+    let label1 = rValueFun;
+    let label2 = label1 + '/2';
+
     const fontSize = w / 40;
     ctx.fillStyle = 'rgb(0,0,0)';
 
@@ -99,4 +100,13 @@ function redrawGraph(rValueFun) {
     ctx.fillText('-' + label2, w / 2 - r / 2 - lineLength, h / 2 - lineLength);
 }
 
-redrawGraph(rValue);
+document.getElementById("R:R_input-increase").addEventListener('click', () => {
+    let r = document.getElementById("R:R_input_input");
+    redrawGraph(r.value);
+});
+document.getElementById("R:R_input-decrease").addEventListener('click', () => {
+    let r = document.getElementById("R:R_input_input");
+    redrawGraph(r.value);
+});
+
+redrawGraph("R");

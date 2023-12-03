@@ -23,8 +23,6 @@ public class Result {
     private String r;
     private boolean fromBD;
 
-    {
-    }
 
     public Result() {
         Session session = sessionJDBC.getSESSION_FACTORY().getCurrentSession();

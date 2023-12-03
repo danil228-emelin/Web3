@@ -50,6 +50,8 @@ body {
     grid-column-end: 16;
     grid-row-start: 10;
     grid-row-end: 10;
+    width: 200px;
+    height: 200px;
 }
 .inputs #graphic{
     grid-column-start: 20;
@@ -59,7 +61,7 @@ body {
 }
 #result {
     position: relative;
-    max-height: 150px;
+    max-height: 30px;
     width: 250px;
     overflow: scroll;
 }
@@ -136,7 +138,7 @@ body {
     font-family: helvetica;
     border: 1px solid;
     position: relative;
-    max-height: 150px;
+    max-height: 30px;
     width: 500px;
     overflow: scroll;
 }

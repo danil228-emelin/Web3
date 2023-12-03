@@ -12,6 +12,11 @@
     <list default="true" id="d955c1cf-c0a9-46d7-b12f-34572af3cdca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/itmo/project/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itmo/project/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bubble.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bubble.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/drawing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/drawing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/graphElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/graphElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,21 +306,18 @@
       <workItem from="1700390878103" duration="5698000" />
       <workItem from="1700409231932" duration="5000" />
       <workItem from="1700410128163" duration="643000" />
+      <workItem from="1700469727650" duration="2098000" />
+      <workItem from="1700471840700" duration="306000" />
+      <workItem from="1700479520584" duration="304000" />
+      <workItem from="1700480572017" duration="519000" />
+      <workItem from="1700497837770" duration="65000" />
+      <workItem from="1700498311931" duration="8194000" />
+      <workItem from="1700550756731" duration="10865000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/webapp/js/graphElement.js</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
